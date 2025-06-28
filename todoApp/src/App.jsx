@@ -9,7 +9,7 @@ function App() {
     const newTodo = {
       id: Date.now(),
       text: task,
-      completed: false
+      completed: false,
     };
     setTodos([...todos, newTodo]);
   };
@@ -27,16 +27,18 @@ function App() {
   };
 
   return (
-    <div>
-      <h1>Todo App</h1>
-      <TodoInput addTodo={addTodo} />
-      <TodoList
-        todos={todos}
-        toggleComplete={toggleComplete}
-        deleteTodo={deleteTodo}
-      />
+    <div className="min-h-screen bg-gradient-to-br from-blue-100 to-purple-100 p-4">
+      <div className="w-full max-w-xl mx-auto bg-white shadow-lg rounded-xl p-4 sm:p-6 md:p-10 mt-10">
+        <h1 className="text-2xl sm:text-3xl font-bold mb-6 text-center text-indigo-600">
+          Todo App
+        </h1>
+        <TodoInput addTodo={addTodo} />
+        <TodoList todos={todos} toggleComplete={toggleComplete} deleteTodo={deleteTodo} />
+      </div>
     </div>
   );
 }
+
+
 
 export default App;
