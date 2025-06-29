@@ -40,12 +40,12 @@ function App() {
     if (t.includes("rain") || t.includes("shower")) return "from-blue-200 to-blue-500";
     if (t.includes("snow")) return "from-slate-100 to-slate-300";
 
-    return "from-sky-100 to-blue-200"; // fallback
+    return "from-blue-500 to-teal-400"; // fallback
   };
 
   const background = weather
     ? getBackgroundClass(weather.current.condition.text)
-    : "from-sky-100 to-blue-200";
+    : "from-blue-500 to-teal-400";
 
   return (
     <div className={`${darkMode ? "dark" : ""}`}>
