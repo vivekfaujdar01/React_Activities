@@ -16,7 +16,7 @@ function WeatherInput({ onSearch }) {
       <input
         type="text"
         placeholder="Enter city, ZIP or lat,lng (e.g. Delhi or 110001 or 28.61,77.21)"
-        className="border border-gray-300 rounded px-4 py-2 w-2/3 sm:w-1/2"
+        className="border border-gray-300 rounded px-4 py-2 w-2/3 sm:w-1/2 text-black"
         value={city}
         onChange={(e) => setCity(e.target.value)}
       />
