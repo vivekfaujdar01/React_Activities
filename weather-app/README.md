@@ -56,7 +56,9 @@ Create a `.env` file in the root directory:
 ```env
 VITE_WEATHER_API_KEY=your_openweathermap_api_key
 
-**📦 Getting Started
+---
+
+## 📦 Getting Started
 
 1. Clone the repository
 git clone https://github.com/your-username/weather-app.git
@@ -68,4 +70,5 @@ VITE_WEATHER_API_KEY=your_openweathermap_api_key
 4. Run the app locally
 npm run dev
 App will run at: http://localhost:5173
-**
+
+---
